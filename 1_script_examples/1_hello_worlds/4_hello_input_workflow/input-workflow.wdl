@@ -21,9 +21,6 @@ task WriteGreeting {
   output {
     File response = stdout()
   }
-  runtime {
-   docker: 'ubuntu:latest'
-  }
 }
 
 
