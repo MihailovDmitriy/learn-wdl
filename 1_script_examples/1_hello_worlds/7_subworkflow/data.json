@@ -1,0 +1,97 @@
+{
+  "workflowName": "HelloWorld",
+  "workflowProcessingEvents": [{
+    "description": "Finished",
+    "timestamp": "2021-06-11T13:58:58.750Z",
+    "cromwellId": "cromid-fd8ee64",
+    "cromwellVersion": "52"
+  }, {
+    "cromwellId": "cromid-fd8ee64",
+    "cromwellVersion": "52",
+    "description": "PickedUp",
+    "timestamp": "2021-06-11T13:58:48.331Z"
+  }],
+  "metadataSource": "Unarchived",
+  "actualWorkflowLanguageVersion": "1.0",
+  "submittedFiles": {
+    "workflow": "version 1.0 \n\nimport \"hello-task.wdl\" as helloTask\n\nworkflow HelloWorld {\n  input {\n      String name\n  }\n  call helloTask.WriteGreeting {\n    input:\n      name = name\n  }\n}\n\n",
+    "root": "",
+    "options": "{\n\n}",
+    "inputs": "{\n    \"HelloWorld.name\": \"Name of hello world!\"\n  }\n",
+    "workflowUrl": "hello-workflow.wdl",
+    "labels": "{}"
+  },
+  "calls": {
+    "HelloWorld.WriteGreeting": [{
+      "executionStatus": "Done",
+      "stdout": "/home/modis/mikhailov/repos/wdl_simple_test/learn-wdl/1_script_examples/1_hello_worlds/7_subworkflow/cromwell-executions/HelloWorld/88a51d82-6b39-4ead-a440-b577b30df42b/call-WriteGreeting/execution/stdout",
+      "backendStatus": "Done",
+      "commandLine": "echo 'hello Name of hello world!!'",
+      "shardIndex": -1,
+      "outputs": {
+        "response": "/home/modis/mikhailov/repos/wdl_simple_test/learn-wdl/1_script_examples/1_hello_worlds/7_subworkflow/cromwell-executions/HelloWorld/88a51d82-6b39-4ead-a440-b577b30df42b/call-WriteGreeting/execution/stdout"
+      },
+      "runtimeAttributes": {
+        "maxRetries": "0",
+        "failOnStderr": "false",
+        "continueOnReturnCode": "0"
+      },
+      "callCaching": {
+        "allowResultReuse": false,
+        "effectiveCallCachingMode": "CallCachingOff"
+      },
+      "inputs": {
+        "name": "Name of hello world!"
+      },
+      "returnCode": 0,
+      "jobId": "65442",
+      "backend": "Local",
+      "end": "2021-06-11T13:58:57.856Z",
+      "stderr": "/home/modis/mikhailov/repos/wdl_simple_test/learn-wdl/1_script_examples/1_hello_worlds/7_subworkflow/cromwell-executions/HelloWorld/88a51d82-6b39-4ead-a440-b577b30df42b/call-WriteGreeting/execution/stderr",
+      "callRoot": "/home/modis/mikhailov/repos/wdl_simple_test/learn-wdl/1_script_examples/1_hello_worlds/7_subworkflow/cromwell-executions/HelloWorld/88a51d82-6b39-4ead-a440-b577b30df42b/call-WriteGreeting",
+      "attempt": 1,
+      "executionEvents": [{
+        "endTime": "2021-06-11T13:58:52.616Z",
+        "startTime": "2021-06-11T13:58:52.595Z",
+        "description": "Pending"
+      }, {
+        "startTime": "2021-06-11T13:58:52.616Z",
+        "description": "RequestingExecutionToken",
+        "endTime": "2021-06-11T13:58:53.186Z"
+      }, {
+        "startTime": "2021-06-11T13:58:53.186Z",
+        "description": "WaitingForValueStore",
+        "endTime": "2021-06-11T13:58:53.197Z"
+      }, {
+        "startTime": "2021-06-11T13:58:53.289Z",
+        "endTime": "2021-06-11T13:58:57.853Z",
+        "description": "RunningJob"
+      }, {
+        "startTime": "2021-06-11T13:58:57.853Z",
+        "description": "UpdatingJobStore",
+        "endTime": "2021-06-11T13:58:57.856Z"
+      }, {
+        "endTime": "2021-06-11T13:58:53.289Z",
+        "description": "PreparingJob",
+        "startTime": "2021-06-11T13:58:53.197Z"
+      }],
+      "start": "2021-06-11T13:58:52.569Z"
+    }]
+  },
+  "outputs": {
+    "HelloWorld.WriteGreeting.response": "/home/modis/mikhailov/repos/wdl_simple_test/learn-wdl/1_script_examples/1_hello_worlds/7_subworkflow/cromwell-executions/HelloWorld/88a51d82-6b39-4ead-a440-b577b30df42b/call-WriteGreeting/execution/stdout"
+  },
+  "workflowRoot": "/home/modis/mikhailov/repos/wdl_simple_test/learn-wdl/1_script_examples/1_hello_worlds/7_subworkflow/cromwell-executions/HelloWorld/88a51d82-6b39-4ead-a440-b577b30df42b",
+  "actualWorkflowLanguage": "WDL",
+  "id": "88a51d82-6b39-4ead-a440-b577b30df42b",
+  "inputs": {
+    "name": "Name of hello world!"
+  },
+  "labels": {
+    "cromwell-workflow-id": "cromwell-88a51d82-6b39-4ead-a440-b577b30df42b"
+  },
+  "submission": "2021-06-11T13:58:48.249Z",
+  "status": "Succeeded",
+  "end": "2021-06-11T13:58:58.748Z",
+  "start": "2021-06-11T13:58:48.408Z"
+}

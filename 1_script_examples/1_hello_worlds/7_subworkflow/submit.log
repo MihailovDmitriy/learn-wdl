@@ -1,0 +1,250 @@
+l
+n -c 'import os;print (os.path.realpath("/home/modis/miniconda2/envs/warp_wgs/bin/cromshell"))'
++ UNALIASED_SCRIPT_NAME=/home/modis/miniconda2/envs/warp_wgs/bin/cromshell
++++ dirname /home/modis/miniconda2/envs/warp_wgs/bin/cromshell
+++ cd /home/modis/miniconda2/envs/warp_wgs/bin
+++ pwd
++ SCRIPTDIR=/home/modis/miniconda2/envs/warp_wgs/bin
+++ echo /home/modis/miniconda2/envs/warp_wgs/bin/cromshell
+++ sed 's#.*/##g'
++ SCRIPTNAME=cromshell
++ MINARGS=1
++ MAXARGS=99
++ PREREQUISITES='curl jq mail column tput rev base64 gunzip'
++ ISINTERACTIVESHELL=true
++ [[ /home/modis/miniconda2/envs/warp_wgs/bin/cromshell != \/\h\o\m\e\/\m\o\d\i\s\/\m\i\n\i\c\o\n\d\a\2\/\e\n\v\s\/\w\a\r\p\_\w\g\s\/\b\i\n\/\c\r\o\m\s\h\e\l\l ]]
++ shopt -s expand_aliases
++ COLOR_NORM='\033[0m'
++ COLOR_UNDERLINED='\033[1;4m'
++ COLOR_FAILED='\033[1;37;41m'
++ COLOR_DOOMED='\033[1;31;47m'
++ COLOR_SUCCEEDED='\033[1;30;42m'
++ COLOR_RUNNING='\033[0;30;46m'
++ COLOR_ABORTED='\033[0;30;43m'
++ TASK_COLOR_RUNNING='\033[0;34m'
++ TASK_COLOR_SUCCEEDED='\033[0;32m'
++ TASK_COLOR_FAILING='\033[0;33m'
++ TASK_COLOR_FAILED='\033[0;31m'
++ DOOMED_LOGO_b64gz=H4sIAOfW3l0AA6WUwXHEIAxF767i35yDQQUkTiWeYcvIgUPa2GbSwHaRSiIJAcL2zmTHeGKYj/QQ39qs625Axv+0vqyrabOB6J+mAkQv79TVIBNpGNGUs24kGbrKGV47Gz2uH1aArE5F5TcM1CKJtWURN8q7Tsi1wH54e5Roe0CDd01yf79/ZFoC8YrES10UvMuRlM4+FpuChoVkmt5s/WDW5+4Vln1KzMOn29cdZpgT2G5BRcKbK56nLEW7Pyt/SNVTklbtrpCqO2ih8O58ER73ObzzMz/uQDXGhZfyubZEudaf+GjZjJkGsoTmJ90xhmaUNiSoRVqubgsaA1SNSYc7HAIdUg2pzO1mgSO07/TyTyIHKhq0jsg9NXMiT3EU45kIEsn8J5wwo0SV/SQNZ5SSDf6gSQt1IncamfaMa1CYZ+KnJjixaFX1Gp2Xu2P2L5X0V+tlUSOlUeIOispu0FPiC0OZUIuZdxFWmeXi6u5k/1MvIkup6jZN3CXzZVplMitOf/Lm5/B8BgAA
++ CROMSHELL_CONFIG_DIR=/home/modis/.cromshell
++ mkdir -p /home/modis/.cromshell
++ CROMWELL_SUBMISSIONS_FILE=/home/modis/.cromshell/all.workflow.database.tsv
++ [[ ! -f /home/modis/.cromshell/all.workflow.database.tsv ]]
++ grep -q 'ALIAS$' /home/modis/.cromshell/all.workflow.database.tsv
++ r=0
++ [[ 0 -ne 0 ]]
++ CROMWELL_SERVER_FILE=/home/modis/.cromshell/cromwell_server.config
++ CROMWELL_NEEDS_SETUP=true
++ [[ -f /home/modis/.cromshell/cromwell_server.config ]]
++ CROMWELL_NEEDS_SETUP=false
++ false
+++ grep -v '^#' /home/modis/.cromshell/cromwell_server.config
+++ head -n1
++ CROMWELL_SERVER_FROM_FILE=localhost:8000
++ export CROMWELL_URL=localhost:8000
++ CROMWELL_URL=localhost:8000
+++ echo localhost:8000
+++ sed -e 's#ht.*://##g'
++ FOLDER_URL=localhost:8000
++ CROMWELL_METADATA_PARAMETERS='excludeKey=submittedFiles&expandSubWorkflows=true'
++ CROMWELL_SLIM_METADATA_PARAMETERS='includeKey=id&includeKey=executionStatus&includeKey=backendStatus&includeKey=status&includeKey=callRoot&expandSubWorkflows=true'
++ CROMWELL_SLIM_METADATA_PARAMETERS+='&includeKey=subWorkflowMetadata&includeKey=subWorkflowId'
++ CURL_CONNECT_TIMEOUT=5
++ let 'CURL_MAX_TIMEOUT=2*5'
++ alias 'curl=curl --connect-timeout ${CURL_CONNECT_TIMEOUT} --max-time ${CURL_MAX_TIMEOUT}'
++ SUB_COMMAND=
++ WORKFLOW_ID_LIST=
++ WORKFLOW_ID=
++ WORKFLOW_SERVER_URL=
++ OPTIONS=
++ TERMINAL_STATES='Succeeded Failed Aborted'
++ TMPFILELIST=
++ SUBPROCESSLIST=
++ trap at_exit EXIT
++ alias 'checkPipeStatus=RC=( "${PIPESTATUS[@]}" );_checkPipeStatus'
++ true
++ checkForComplexHelpArgument submit hello-workflow.wdl hello-workflow.json
++ for arg in '$@'
++ case ${arg} in
++ for arg in '$@'
++ case ${arg} in
++ for arg in '$@'
++ case ${arg} in
++ getopts :t: opt
++ shift 0
++ SUB_COMMAND=submit
++ shift
++ false
++ case ${SUB_COMMAND} in
++ checkPrerequisites curl jq mail column tput rev base64 gunzip
++ local missing=
++ local foundMissing=false
++ for c in '${@}'
++ which curl
++ r=0
++ [[ 0 -ne 0 ]]
++ for c in '${@}'
++ which jq
++ r=0
++ [[ 0 -ne 0 ]]
++ for c in '${@}'
++ which mail
++ r=0
++ [[ 0 -ne 0 ]]
++ for c in '${@}'
++ which column
++ r=0
++ [[ 0 -ne 0 ]]
++ for c in '${@}'
++ which tput
++ r=0
++ [[ 0 -ne 0 ]]
++ for c in '${@}'
++ which rev
++ r=0
++ [[ 0 -ne 0 ]]
++ for c in '${@}'
++ which base64
++ r=0
++ [[ 0 -ne 0 ]]
++ for c in '${@}'
++ which gunzip
++ r=0
++ [[ 0 -ne 0 ]]
++ false
++ return 0
++ r=0
++ [[ 0 -ne 0 ]]
++ SUB_COMMAND_FOR_DISPLAY=submit
++ case ${SUB_COMMAND} in
++ [[ submit != \n\o\t\i\f\y ]]
++ checkJQVersion
+++ jq --version
++ local currentVersion=jq-1.6
++ local requiredVersion=jq-1.5
+++ printf '%s\n' jq-1.5 jq-1.6
+++ sort -V
+++ head -n1
++ '[' jq-1.5 = jq-1.5 ']'
++ return 0
++ r=0
++ [[ 0 -ne 0 ]]
++ error 'Sub-Command: submit'
++ echo -e 'Sub-Command: submit'
+Sub-Command: submit
++ case ${SUB_COMMAND} in
++ submit hello-workflow.wdl hello-workflow.json
++ local doWait=false
++ local OPTIND
++ getopts w opt
++ shift 0
++ [[ 2 -lt 2 ]]
++ local wdl=hello-workflow.wdl
++ local json=hello-workflow.json
++ local optionsJson=
++ local dependenciesZip=
++ assertRequiredFileIsNonEmpty hello-workflow.wdl WDL
++ local fileName=hello-workflow.wdl
++ local fileDescription=WDL
++ [[ -z hello-workflow.wdl ]]
++ [[ -f hello-workflow.wdl ]]
++ [[ ! -s hello-workflow.wdl ]]
++ assertRequiredFileIsNonEmpty hello-workflow.json 'Input JSON'
++ local fileName=hello-workflow.json
++ local 'fileDescription=Input JSON'
++ [[ -z hello-workflow.json ]]
++ [[ -f hello-workflow.json ]]
++ [[ ! -s hello-workflow.json ]]
++ which womtool
++ local r=0
++ [[ 0 -eq 0 ]]
++ echo -ne 'Validating WDL and JSON before submission...'
+Validating WDL and JSON before submission...++ makeTemp
+++ local f
++++ mktemp
+++ f=/tmp/tmp.9gfMST8vLC
+++ TMPFILELIST=' /tmp/tmp.9gfMST8vLC'
+++ echo /tmp/tmp.9gfMST8vLC
++ local tmpValidationOutput=/tmp/tmp.9gfMST8vLC
++ womtool validate hello-workflow.wdl -i hello-workflow.json
++ [[ 0 -eq 0 ]]
++ echo -e '\tWDL and JSON are valid.'
+    WDL and JSON are valid.
+    + assertOptionalFileIsNonEmpty '' 'Options JSON'
+    + local fileName=
+    + local 'fileDescription=Options JSON'
+    + [[ ! -z '' ]]
+    + assertOptionalFileIsNonEmpty '' 'Dependencies Zip'
+    + local fileName=
+    + local 'fileDescription=Dependencies Zip'
+    + [[ ! -z '' ]]
+    + assertCanCommunicateWithServer localhost:8000
+    ++ makeTemp
+    ++ local f
+    +++ mktemp
+    ++ f=/tmp/tmp.bde4xagb3w
+    ++ TMPFILELIST=' /tmp/tmp.bde4xagb3w'
+    ++ echo /tmp/tmp.bde4xagb3w
+    + local f=/tmp/tmp.bde4xagb3w
+    + curl --connect-timeout 5 --max-time 10 -s localhost:8000/api/workflows/v1/backends
+    + grep -q supportedBackends /tmp/tmp.bde4xagb3w
+    + r=0
+    + [[ 0 -ne 0 ]]
+    + echo 'Submitting job to server: localhost:8000'
+    Submitting job to server: localhost:8000
+    ++ curl --connect-timeout 5 --max-time 10 -s -F workflowSource=@hello-workflow.wdl -F workflowInputs=@hello-workflow.json localhost:8000/api/workflows/v1
+    + local 'response={"id":"887b4c1a-7074-4391-a76c-98f93e26732e","status":"Submitted"}'
+    + r=0
+    + [[ 0 -ne 0 ]]
+    ++ echo '{"id":"887b4c1a-7074-4391-a76c-98f93e26732e","status":"Submitted"}'
+    ++ jq -r .status
+    + local st=Submitted
+    ++ echo '{"id":"887b4c1a-7074-4391-a76c-98f93e26732e","status":"Submitted"}'
+    ++ jq -r .id
+    + local id=887b4c1a-7074-4391-a76c-98f93e26732e
+    + [[ Submitted != \S\u\b\m\i\t\t\e\d ]]
+    ++ matchWorkflowId 887b4c1a-7074-4391-a76c-98f93e26732e
+    ++ local rv=1
+    ++ [[ 887b4c1a-7074-4391-a76c-98f93e26732e =~ ^[[:xdigit:]]{8}-[[:xdigit:]]{4}-[[:xdigit:]]{4}-[[:xdigit:]]{4}-[[:xdigit:]]{12}$ ]]
+    ++ rv=0
+    ++ echo 0
+    ++ return 0
+    + [[ 0 -ne 0 ]]
+    + turtle
+    + error '                  __     '
+    + echo -e '                  __     '
+                      __     
+                      + error '       .,-;-;-,. /'\''_\    '
+                      + echo -e '       .,-;-;-,. /'\''_\    '
+                             .,-;-;-,. /'_\    
+                             + error '     _/_/_/_|_\_\) /     '
+                             + echo -e '     _/_/_/_|_\_\) /     '
+                                  _/_/_/_|_\_\) /     
+                                  + error '   '\''-<_><_><_><_>=/\     '
+                                  + echo -e '   '\''-<_><_><_><_>=/\     '
+                                     '-<_><_><_><_>=/\     
+                                     + error '     `/_/====/_/-'\''\_\    '
+                                     + echo -e '     `/_/====/_/-'\''\_\    '
+                                          `/_/====/_/-'\_\    
+                                          + error '      ""     ""    ""    '
+                                          + echo -e '      ""     ""    ""    '
+                                                ""     ""    ""    
+                                                + echo '{"id":"887b4c1a-7074-4391-a76c-98f93e26732e","status":"Submitted"}'
+                                                {"id":"887b4c1a-7074-4391-a76c-98f93e26732e","status":"Submitted"}
+                                                + local runDir=/home/modis/.cromshell/localhost:8000/887b4c1a-7074-4391-a76c-98f93e26732e
+                                                + mkdir -p /home/modis/.cromshell/localhost:8000/887b4c1a-7074-4391-a76c-98f93e26732e
+                                                + cp hello-workflow.wdl hello-workflow.json /home/modis/.cromshell/localhost:8000/887b4c1a-7074-4391-a76c-98f93e26732e/
+                                                ++ date +%Y%m%d_%H%M%S
+                                                ++ basename hello-workflow.wdl
+                                                + echo -e '20210611_161725\tlocalhost:8000\t887b4c1a-7074-4391-a76c-98f93e26732e\thello-workflow.wdl\tSubmitted'
+                                                + false
+                                                + return 0
+                                                + rv=0
+                                                + exit 0
+                                                + at_exit
+                                                + cleanTempVars
+                                                + rm -f
+                                                + killSubProcesses
+                                                + [[ 0 -gt 0 ]]
+                                                + [[ 0 -gt 0 ]]
+
